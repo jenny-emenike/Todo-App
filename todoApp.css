@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(83, 3, 97);
+    margin : 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin: 0 auto;
+    padding-top: 2rem;
+   max-width: 800px;
+   width: 100%;
+
+}
+#input-form{
+    display:flex;
+}
+header h1{
+
+    font-size: 2rem;
+    color: rgb(234, 183, 250);
+}
+#input-id{
+    background-color:rgb(42, 1, 49);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 1 1 0%;
+    border:white;
+}
+#input-id:active{
+    border: 1px solid rgb(251, 251, 251);
+    transition: 0.4s;
+}
+#input-id::placeholder{
+    color:white;
+    font-size: 1.0rem;
+}
+main{
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+
+}
+input, button{
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+#input-submit{
+  
+    color: rgb(234, 183, 250);
+    background-image: linear-gradient( to right, pink , orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+#tasks{
+    display:block;
+}
+
+#tasks h2{
+    color: rgb(234, 183, 250);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.task-types{
+    display: flex;
+    background-color: rgb(42, 1, 49); 
+    background-color:rgb(42, 1, 49);
+    padding:  1rem;
+    border-radius: 2rem;
+
+}
+.task-content{
+    flex: 1 1 0%;
+    background-color:rgb(42, 1, 49);
+    padding:  1rem;
+    border-radius: 2.5rem;
+
+
+}
+.text{
+    color: white;
+    font-size: 1rem;
+    padding-right: 7rem;
+}
+.text:active{
+    color:rgb(195, 117, 219);
+}
+
+.text:not(:read-only){
+    color:rgb(196, 147, 211);
+}
+.buttons {
+    display: flex;
+    font-size: 1.5rem;
+    
+
+}
+
+.editBtn{
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient( to right, pink , orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.deleteBtn{
+    cursor: pointer;
+    color: rgb(230, 17, 59);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
